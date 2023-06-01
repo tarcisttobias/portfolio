@@ -431,6 +431,18 @@ main {
   padding-left: 7px;
 }
 
+.socialists {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   gap: 15px; 
+   padding-bottom: 4px;
+  padding-left: 7px; 
+}
+ 
+
+
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
