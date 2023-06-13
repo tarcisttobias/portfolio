@@ -1363,7 +1363,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: var(--fs-8);
   }
 
-  .info_more-btn ion-icon { display: none; }
+  .info_more-btn img { display: none; }
 
   .separator { margin: 32px 0; }
 
