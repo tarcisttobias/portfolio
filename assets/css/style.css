@@ -446,10 +446,12 @@ main {
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
+  filter: grayscale(1);
+  transition: var(--transition-1);
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { filter: grayscale(0); /**color: var(--light-gray);**/ }
 
 
 
