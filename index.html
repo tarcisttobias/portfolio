@@ -11,7 +11,8 @@
         <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
         <!-- - custom css link -->
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link id="css-link" rel="stylesheet" href="./assets/css/l_style.css">
+        
 
         <!-- - google font link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +50,7 @@
                     <button class="info_more-btn" data-sidebar-btn="data-sidebar-btn">
                         <span>Informações de Contato</span>
 
-                        <img src="https://img.icons8.com/windows/13/0079f2/expand-arrow--v1.png"/>
+                        <img src="https://img.icons8.com/windows/13/0059b3/expand-arrow--v1.png"/>
 
                     </button>
 
@@ -125,33 +126,33 @@
 
                         <li class="social-item">
                             <a href="https://wa.me/5524999838836" class="social-link" alt="Whatsapp">
-                                <img src="https://img.icons8.com/windows/22/0079f2/whatsapp--v1.svg"/>
+                                <img src="https://img.icons8.com/windows/22/0059b3/whatsapp--v1.svg"/>
                             </a>
                         </li>
 
                         <li class="social-item">
                             <a href="https://t.me/tarcisttobias/" class="social-link">
                                 <img
-                                    src="https://img.icons8.com/windows/22/0079f2/telegram-app.svg"
+                                    src="https://img.icons8.com/windows/22/0059b3/telegram-app.svg"
                                     alt="telegram-app"/>
                             </a>
                         </li>
 
                         <li class="social-item">
                             <a class="social-link" href="https://join.skype.com/invite/mcWddurrglvz">
-                                <img src="https://img.icons8.com/windows/22/0079f2/skype.svg"/>
+                                <img src="https://img.icons8.com/windows/22/0059b3/skype.svg"/>
                             </a>
                         </li>
 
                         <li class="social-item">
                             <a href="https://www.linkedin.com/in/tarcisttobias/" class="social-link">
-                                <img src="https://img.icons8.com/windows/22/0079f2/linkedin.svg"/>
+                                <img src="https://img.icons8.com/windows/22/0059b3/linkedin.svg"/>
                             </a>
                         </li>
 
                         <li class="social-item">
                             <a href="https://www.instagram.com/tarcisttobias/" class="social-link">
-                                <img src="https://img.icons8.com/windows/22/0079f2/instagram-new.svg"/>
+                                <img src="https://img.icons8.com/windows/22/0059b3/instagram-new.svg"/>
                             </a>
                         </li>
 
@@ -182,12 +183,16 @@
                         <li class="navbar-item">
                             <button class="navbar-link" data-nav-link="data-nav-link">Resume</button>
                         </li>
-                        <!-- <li class="navbar-item"> <button class="navbar-link"
-                        data-nav-link>Blog</button> </li> -->
-
+                        
                         <li class="navbar-item">
                             <button class="navbar-link" data-nav-link="data-nav-link">Contato</button>
                         </li>
+
+                        <li class="navbar-item"> 
+                            <button class="navbar-link" onclick="toggleCSS()">
+                                <img id="img1" src="https://img.icons8.com/windows/22/first-quarter.png"/>
+                              </button>                  
+                        </li>                  
 
                     </ul>
 
@@ -468,7 +473,7 @@
                                 <div class="select-value" data-selecct-value="data-selecct-value">Categorias</div>
 
                                 <div class="select-icon">
-                                    <img src="https://img.icons8.com/windows/15/ffffff/expand-arrow--v1.png"/>
+                                    <img src="https://img.icons8.com/windows/15/0059b3/expand-arrow--v1.png"/>
 
                                 </div>
 
@@ -711,7 +716,7 @@
                             onclick="window.open('https://github.com/tarcisttobias/portfolio/raw/main/assets/attachment/CV_Tarcis_Tavares_Tobias.pdf')">
                             <span>Download Currículo PDF</span>
 
-                            <img src="https://img.icons8.com/windows/13/0079f2/export-pdf.png"/>
+                            <img src="https://img.icons8.com/windows/13/0059b3/export-pdf.png"/>
 
                         </button>
 
@@ -883,7 +888,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/25/ffffff/power-bi.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/25/0059b3/power-bi.png">
                                     <h5 class="h5">Power BI (DataViz)</h5>
                                     <data value="80">80%</data>
                                 </div>
@@ -896,7 +901,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/25/ffffff/search-database.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/25/0059b3/search-database.png">
                                     <h5 class="h5">ETL</h5>
                                     <data value="70">70%</data>
                                 </div>
@@ -909,7 +914,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/ffffff//ms-excel.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/0059b3//ms-excel.png">
                                     <h5 class="h5">Excel / Google Sheets</h5>
                                     <data value="90">90%</data>
                                 </div>
@@ -922,7 +927,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/ffffff/big-data.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/0059b3/big-data.png">
                                     <h5 class="h5">SQL</h5>
                                     <data value="50">50%</data>
                                 </div>
@@ -934,7 +939,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/ffffff/js-squared.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/0059b3/js-squared.png">
                                     <h5 class="h5">JavaScript</h5>
                                     <data value="60">60%</data>
                                 </div>
@@ -946,7 +951,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/ffffff/python.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/0059b3/python.png">
                                     <h5 class="h5">Python</h5>
                                     <data value="40">40%</data>
                                 </div>
@@ -958,7 +963,7 @@
 
                             <li class="skills-item">
 
-                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/ffffff/html-5.png">
+                                <div class="title-wrapper"><img src="https://img.icons8.com/windows/32/0059b3/html-5.png">
                                     <h5 class="h5">HTML/CSS</h5>
                                     <data value="50">50%</data>
                                 </div>
@@ -1097,55 +1102,55 @@
 
                             <li class="social-item">
                                 <a href="https://wa.me/5524999838836" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/whatsapp--v1.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/whatsapp--v1.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://t.me/tarcisttobias" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/telegram-app.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/telegram-app.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://join.skype.com/invite/mcWddurrglvz" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/skype.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/skype.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://m.me/tarcisttobias/" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/facebook-messenger--v1.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/facebook-messenger--v1.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://twitter.com/tarcisttobias" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/twitter.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/twitter.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://www.instagram.com/tarcisttobias/" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/instagram-new.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/instagram-new.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://www.fb.com/tarcisttobias/" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/facebook.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/facebook.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://www.linkedin.com/in/tarcisttobias/" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/linkedin.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/linkedin.svg"/>
                                 </a>
                             </li>
 
                             <li class="social-item">
                                 <a href="https://github.com/tarcisttobias" class="social-link">
-                                    <img src="https://img.icons8.com/windows/22/0079f2/github.svg"/>
+                                    <img src="https://img.icons8.com/windows/22/0059b3/github.svg"/>
                                 </a>
                             </li>
 
