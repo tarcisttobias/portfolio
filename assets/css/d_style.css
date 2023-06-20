@@ -546,13 +546,13 @@ main {
 /** IMG **/
 .navbar-link-img {
     font-size: var(--fs-8);
-    padding: 20px 7px; 
+    padding: 20px 7px;
 }
 
 .navbar-link-img:focus,
 .navbar-link-img:hover {
     filter: contrast(0);
- 
+
 }
 
 /*-----------------------------------*\

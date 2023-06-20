@@ -1,22 +1,32 @@
 'use strict';
 
-
 //mode view
 function toggleCSS() {
     var link = document.querySelector("#css-link");
     var img1 = document.querySelector("#img1");
     var img2 = document.querySelector("#img2");
     if (link.getAttribute("href") == "./assets/css/l_style.css") {
-      link.setAttribute("href", "./assets/css/d_style.css");
-      img1.setAttribute("src", "https://img.icons8.com/windows/18/d6d6d6/last-quarter.png");
-      img2.setAttribute("src", "https://img.icons8.com/windows/18/44566c/first-quarter.png");
+        link.setAttribute("href", "./assets/css/d_style.css");
+        img1.setAttribute(
+            "src",
+            "https://img.icons8.com/windows/50/d6d6d6/last-quarter.png"
+        );
+        img2.setAttribute(
+            "src",
+            "https://img.icons8.com/windows/50/44566c/first-quarter.png"
+        );
     } else {
-      link.setAttribute("href", "./assets/css/l_style.css");
-      img1.setAttribute("src", "https://img.icons8.com/windows/18/44566c/first-quarter.png");
-      img2.setAttribute("src", "https://img.icons8.com/windows/18/d6d6d6/last-quarter.png");
+        link.setAttribute("href", "./assets/css/l_style.css");
+        img1.setAttribute(
+            "src",
+            "https://img.icons8.com/windows/50/44566c/first-quarter.png"
+        );
+        img2.setAttribute(
+            "src",
+            "https://img.icons8.com/windows/50/d6d6d6/last-quarter.png"
+        );
     }
-  }
-
+}
 
 // element toggle function
 const elementToggleFunc = function (elem) {
