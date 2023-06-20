@@ -511,7 +511,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: hsla(0, 0%, 100%, 0.75);
+    background: hsla(0, 0%, 100%, 0.749);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
     border-radius: 12px 12px 0 0;
@@ -532,15 +532,29 @@ main {
     font-size: var(--fs-8);
     padding: 20px 7px;
     transition: color var(--transition-1);
+
 }
 
 .navbar-link:focus,
 .navbar-link:hover {
     color: var(--light-gray-70);
+
 }
 
 .navbar-link.active {
     color: var(--orange-yellow-crayola);
+
+}
+
+/** IMG **/
+.navbar-link-img {
+    font-size: var(--fs-8);
+    padding: 20px 7px;
+}
+
+.navbar-link-img:focus,
+.navbar-link-img:hover {
+    filter: contrast(0);
 }
 
 /*-----------------------------------*\
