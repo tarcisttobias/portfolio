@@ -490,7 +490,7 @@ main {
     padding-left: 7px;
 }
 
-.social-item .social-link {
+.social-item .social-link{
     color: var(--light-gray-70);
     font-size: 18px;
     filter: grayscale(1);
@@ -501,6 +501,30 @@ main {
     filter: grayscale(0);
     /**color: var(--light-gray);**/
 }
+
+.tooltip {
+    position: absolute;
+    top: -15px;
+    left: 50%; /* adicionado */
+    transform: translateX(-50%) translateY(-10px);
+    background: var(--onyx);
+    min-width: max-content;
+    color: var(--vegas-gold);
+    font-size: 10px;
+    font-weight: var(--fw-500);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-1);
+    z-index: 1;
+}
+
+.social-link:hover .tooltip {
+    opacity: 1; /* mudado */
+}
+  
 
 /*-----------------------------------*\
   #NAVBAR
