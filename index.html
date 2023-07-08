@@ -49,9 +49,10 @@
                     <button class="info_more-btn" data-sidebar-btn="data-sidebar-btn">
                         <span>Informações de Contato</span>
 
-                        <img width="13"
-                        height="13"
-                        src="https://img.icons8.com/sf-black-filled/64/0059b3/expand-arrow--v1.png"/>
+                        <img
+                            width="13"
+                            height="13"
+                            src="https://img.icons8.com/sf-black-filled/64/0059b3/expand-arrow--v1.png"/>
 
                     </button>
 
@@ -478,10 +479,10 @@
                                 <div class="select-value" data-selecct-value="data-selecct-value">Categorias</div>
 
                                 <div class="select-icon">
-                                    <img 
-                                    width="13"
-                                    height="13" 
-                                    src="https://img.icons8.com/metro/64/0059b3/expand-arrow--v1.png"/>
+                                    <img
+                                        width="13"
+                                        height="13"
+                                        src="https://img.icons8.com/metro/64/0059b3/expand-arrow--v1.png"/>
 
                                 </div>
 
@@ -724,9 +725,10 @@
                             onclick="window.open('https://github.com/tarcisttobias/portfolio/raw/main/assets/attachment/CV_Tarcis_Tavares_Tobias.pdf')">
                             <span>Download Currículo</span>
 
-                            <img width="15"
-                                    height="15"
-                            src="https://img.icons8.com/ios/100/0059b3/export-pdf-2.png"/>
+                            <img
+                                width="15"
+                                height="15"
+                                src="https://img.icons8.com/ios/100/0059b3/export-pdf-2.png"/>
 
                         </button>
 
@@ -1060,132 +1062,137 @@
 
                     <h3 class="h3 form-title">Entre em Contato</h3>
 
-                    <form action="./assets/php/mail.php" class="form" data-form="data-form">
-                        
+                    <form class="form" data-form="data-form">
+
                         <div class="input-wrapper">
                             <input
-                                type="text"
-                                name="fullname"
-                                class="form-input"
-                                placeholder="Nome Completo"
-                                required="required"
-                                data-form-input="data-form-input">
-
+                               type="text"
+                               name="fullname"
+                               id="fullname"
+                               class="form-input"
+                               placeholder="Nome Completo"
+                               required="required"
+                               data-form-input="data-form-input">
+                      
                             <input
-                                type="email"
-                                name="email"
-                                class="form-input"
-                                placeholder="Email"
-                                required="required"
-                                data-form-input="data-form-input">
-                        </div>
-
-                        <textarea
+                               type="email"
+                               name="email"
+                               id="email"
+                               class="form-input"
+                               placeholder="Email"
+                               required="required"
+                               data-form-input="data-form-input">
+                         </div>
+                      
+                         <textarea
                             name="message"
+                            id="message"
                             class="form-input"
                             placeholder="Mensagem"
                             required="required"
                             data-form-input="data-form-input"></textarea>
-
-                        <button
-                            class="form-btn"
-                            type="submit"
-                            disabled="disabled"
-                            data-form-btn="data-form-btn">
+                      
+                         <button 
+                            class="form-btn" 
+                            type="button" 
+                            onclick="enviarEmail()">
                             <ion-icon name="paper-plane"></ion-icon>
                             <span>Enviar</span>
-                        </button>
+                         </button>
+                    
+                </form>
 
-                    </form>
+            </section>
 
-                </section>
+            <div class="separator"></div>
 
-                <div class="separator"></div>
+            <section class="Plataformas">
 
-                <section class="Plataformas">
+                <h3 class="h3 skills-title">Outras Plataformas</h3>
 
-                    <h3 class="h3 skills-title">Outras Plataformas</h3>
+                <ul class="socialists">
 
-                    <ul class="socialists">
+                    <li class="social-item">
 
-                        <li class="social-item">
-                            
-                            <a href="https://wa.me/5524999838836"  class="social-link">
-                                <div class="tooltip">Whatsapp</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/whatsapp--v1.svg"/>
-                                
-                            </a>
-                        </li>
+                        <a href="https://wa.me/5524999838836" class="social-link">
+                            <div class="tooltip">Whatsapp</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/whatsapp--v1.svg"/>
 
-                        <li class="social-item">
-                            <a href="https://t.me/tarcisttobias" class="social-link">
-                                <div class="tooltip">Telegram</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/telegram-app.svg"/>
-                            </a>
-                        </li>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://join.skype.com/invite/mcWddurrglvz" class="social-link">
-                                <div class="tooltip">Skype</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/skype.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://t.me/tarcisttobias" class="social-link">
+                            <div class="tooltip">Telegram</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/telegram-app.svg"/>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://m.me/tarcisttobias/" class="social-link">
-                                <div class="tooltip">Messenger</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/facebook-messenger--v1.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://join.skype.com/invite/mcWddurrglvz" class="social-link">
+                            <div class="tooltip">Skype</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/skype.svg"/>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://twitter.com/tarcisttobias" class="social-link">
-                                <div class="tooltip">Twitter</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/twitter.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://m.me/tarcisttobias/" class="social-link">
+                            <div class="tooltip">Messenger</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/facebook-messenger--v1.svg"/>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://www.instagram.com/tarcisttobias/" class="social-link">
-                                <div class="tooltip">Instagram</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/instagram-new.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://twitter.com/tarcisttobias" class="social-link">
+                            <div class="tooltip">Twitter</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/twitter.svg"/>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://www.linkedin.com/in/tarcisttobias/" class="social-link">
-                                <div class="tooltip">Linkedin</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/linkedin.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/tarcisttobias/" class="social-link">
+                            <div class="tooltip">Instagram</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/instagram-new.svg"/>
+                        </a>
+                    </li>
 
-                        <li class="social-item">
-                            <a href="https://github.com/tarcisttobias" class="social-link">
-                                <div class="tooltip">Github</div>
-                                <img src="https://img.icons8.com/windows/22/0059b3/github.svg"/>
-                            </a>
-                        </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/tarcisttobias/" class="social-link">
+                            <div class="tooltip">Linkedin</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/linkedin.svg"/>
+                        </a>
+                    </li>
 
-                    </ul>
+                    <li class="social-item">
+                        <a href="https://github.com/tarcisttobias" class="social-link">
+                            <div class="tooltip">Github</div>
+                            <img src="https://img.icons8.com/windows/22/0059b3/github.svg"/>
+                        </a>
+                    </li>
 
-                </section>
+                </ul>
 
-            </article>
+            </section>
 
-        </div>
+        </article>
 
-    </main>
+    </div>
 
-    <!-- - custom js link -->
-    <script src="./assets/js/script.js"></script>
+</main>
 
-    <!-- - ionicon link -->
-    <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script
-        nomodule="nomodule"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- - custom js link -->
+<script 
+    type="text/javascript" 
+    src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+<!-- - ionicon link -->
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script
+    nomodule="nomodule"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

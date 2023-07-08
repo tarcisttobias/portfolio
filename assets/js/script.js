@@ -215,3 +215,53 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     });
 }
+
+//  função para enviar o email
+
+(function(){
+   emailjs.init("GLGmDI9zD_f2gQY_4");
+})  ();
+
+// Criar uma função para enviar o email
+
+function enviarEmail() {
+   // Pegar os dados do formulário
+   var nome = document.getElementById("fullname").value;
+   var email = document.getElementById("email").value;
+   var mensagem = document.getElementById("message").value;
+
+   // Validar se os campos estão preenchidos
+   if (nome == "" || email == "" || mensagem == "") {
+      alert("Por favor, preencha todos os campos.");
+      return;
+   }
+
+   // Validar se o email é válido
+   var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   if (!regex.test(email)) {
+      alert("Por favor, digite um email válido.");
+      return;
+   }
+
+   // Definir o assunto como uma variável dinâmica
+   var assunto = "Contato pelo site - " + nome;
+
+   // Criar um objeto com os dados do email
+   var params = {
+      from_name: nome,
+      from_email: email,
+      subject: assunto,
+      message: mensagem
+   };
+
+   // Enviar o email usando o EmailJS
+   
+   emailjs.send("service_mrlc5kk","template_u8666ao", params)
+      .then(function(response) {
+         // Mostrar uma mensagem de sucesso se o email foi enviado
+         alert("Email enviado com sucesso!");
+      }, function(error) {
+         // Mostrar uma mensagem de erro se ocorreu algum problema
+         alert("Ocorreu um erro ao enviar o email: " + error);
+      });
+}
